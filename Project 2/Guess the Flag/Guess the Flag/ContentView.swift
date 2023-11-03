@@ -65,6 +65,8 @@ struct ContentView: View {
         }
         .alert(scoreTitle, isPresented: $showingScore) {
             Button("Continue", action: askQuestion)
+        } message: {
+            Text("Your new score is \(score)")
         }
     }
 
@@ -73,8 +75,9 @@ struct ContentView: View {
             scoreTitle = "Correct"
             score += 10
         } else {
-            scoreTitle = "Wrong"
+            scoreTitle = "Wrong.. \n That's the flag of \(countries[number])"
             score -= 10
+
         }
 
         showingScore = true
