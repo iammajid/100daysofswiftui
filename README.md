@@ -10,5 +10,8 @@ https://www.hackingwithswift.com/100/swiftui
 **Project 1 - Challenge: Unit Converter**
 ![Project 1 - Challenge - Unit Converter](https://github.com/iammajid/100daysofswiftui/assets/82396176/3ce16562-1ed0-4aac-b9ea-9edc41c06c53)
 
-**Project Guess the Flag**
+**Project 2 - Guess the Flag**
 ![Project 2 - Guess the Flag](https://github.com/iammajid/100daysofswiftui/assets/82396176/492aa2c4-548f-456b-ac18-1992aef61045)
+
+**Project 3 - Challenge: Rock, Paper, Scissors**
+![Frame 83](https://github.com/iammajid/100daysofswiftui/assets/82396176/91a08391-1dfa-4c27-807f-a1ccfaea43b3)
