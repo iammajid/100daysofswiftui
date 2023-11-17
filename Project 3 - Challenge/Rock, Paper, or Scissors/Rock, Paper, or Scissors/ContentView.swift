@@ -81,7 +81,7 @@ struct ContentView: View {
                                     .font(.title)
                                     .overlay(
                                         RoundedRectangle(cornerRadius: 8)
-                                            .stroke(selectedMove == index ? feedbackColor : .clear, lineWidth: 4)
+                                            .stroke(selectedMove == index ? feedbackColor : .clear, lineWidth: 1)
                                     )
                             }
                         }
