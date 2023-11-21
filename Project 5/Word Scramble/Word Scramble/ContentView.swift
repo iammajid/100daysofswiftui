@@ -15,6 +15,7 @@ struct ContentView: View {
     @State private var errorTitle = ""
     @State private var errorMessage = ""
     @State private var showingError = false
+    @State private var score = 0
     
     var body: some View {
         NavigationStack {
@@ -32,12 +33,15 @@ struct ContentView: View {
                         }
                     }
                 }
+                
+                Text("Your score is \(score)")
             }
             .navigationTitle(rootWord)
             .onSubmit(addNewWord)
             .onAppear(perform: startGame)
-            .alert(errorTitle, isPresented: $showingError) { } message: {
-                Text(errorMessage)
+            .alert(errorTitle, isPresented: $showingError) { } message: { Text(errorMessage) }
+            .toolbar {
+                Button("Restart", action: startGame)
             }
         }
     }
@@ -62,6 +66,11 @@ struct ContentView: View {
             return
         }
         
+        guard answer.count >= 3 else {
+            wordError(title: "Word is to short", message: "The word must have more than 2 characters!")
+            return
+        }
+
         withAnimation {
             usedWords.insert(answer, at: 0)
         }
@@ -70,6 +79,10 @@ struct ContentView: View {
     }
     
     func startGame() {
+        
+        usedWords = []
+        score = 0
+        
         if let startWordsURL = Bundle.main.url(forResource: "start", withExtension: "txt") {
             if let stardWords = try? String(contentsOf: startWordsURL) {
                 let allWords = stardWords.components(separatedBy: "\n")
@@ -101,6 +114,9 @@ struct ContentView: View {
         let checker = UITextChecker()
         let range = NSRange(location: 0, length: word.utf16.count)
         let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
+        
+        score += 10
+        
         return misspelledRange.location == NSNotFound
         
     }
