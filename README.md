@@ -20,6 +20,7 @@ https://www.hackingwithswift.com/100/swiftui
 ![Project 4 - Better Rest](https://github.com/iammajid/100daysofswiftui/assets/82396176/86fca5bd-a9ce-4e80-9e37-e4c98f1f761d)
 
 **Project 5 - Word Scramble**
-![Project 5 - Word Scramble](https://github.com/iammajid/100daysofswiftui/assets/82396176/ecbd7bfa-ea0d-4f4d-b9c3-90bb771b6edd)
+![Project 5 - Word Scramble](https://github.com/iammajid/100daysofswiftui/assets/82396176/9532f553-348b-4333-8c32-a8f89972a626)
+
 
 
