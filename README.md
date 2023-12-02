@@ -22,5 +22,8 @@ https://www.hackingwithswift.com/100/swiftui
 **Project 5 - Word Scramble**
 ![Project 5 - Word Scramble](https://github.com/iammajid/100daysofswiftui/assets/82396176/9532f553-348b-4333-8c32-a8f89972a626)
 
+**Project 6 - iExpense**
+![Project 6 - iExpense](https://github.com/iammajid/100daysofswiftui/assets/82396176/38df46ad-c690-4ddd-a220-5591ddd4cdb0)
+
 
 
